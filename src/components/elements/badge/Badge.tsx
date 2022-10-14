@@ -20,7 +20,7 @@ function renderColor (color?: string) {
 
 const Badge = ({ label, color }: BadgeProps) => {
   return (
-    <span className={`${renderColor(color)} text-xs font-semibold mr-2 px-2.5 py-0.5 rounded`}>{label}</span>
+    <span data-testid="badge" className={`${renderColor(color)} text-xs font-semibold mr-2 px-2.5 py-0.5 rounded`}>{label}</span>
   )
 }
 
