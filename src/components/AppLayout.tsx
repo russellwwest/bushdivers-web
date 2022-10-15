@@ -12,7 +12,7 @@ const AppLayout = ({ children, heading, type }: AppLayoutProps) => {
     <>
       <NavBar />
       <div className={`${type === 'full' ? 'mt-14 md:mt-16' : 'mt-16 md:mt-24 container mx-auto'}`}>
-        {heading && <h1 className="text-2xl mb-4">{heading}</h1>}
+        {heading && <h1 className="mb-4">{heading}</h1>}
         {children}
       </div>
     </>
